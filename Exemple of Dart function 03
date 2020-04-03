@@ -1,0 +1,24 @@
+void main() {
+//   Human sekou = Human();
+//   print(sekou.numbarOfLegs);
+//   sekou.talk();
+
+  Race whiteMan = Race();
+  print(whiteMan.numbarOfLegs);
+  whiteMan.talk();
+  whiteMan.hair();
+}
+
+class Human {
+  int numbarOfLegs = 2;
+  void talk() {
+    print('Can talk');
+  }
+}
+
+class Race extends Human {
+  void hair() {
+    String typeHair = 'Long hair';
+    print(typeHair);
+  }
+}
